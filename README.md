@@ -4,13 +4,13 @@
 
 The linkerd bundle provides the necessary components to enable service mesh capabilities in a workload cluster.
 
-**What is this app?**
+**Apps**
 
-- linkerd2-cni-app
-- linkerd-control-plane-app
-- linkerd-multicluster-app (optional)
-- linkerd-multicluster-link-app (optional)
-- linkerd-viz-app
+- [linkerd2-cni-app](https://github.com/giantswarm/linkerd2-cni-app)
+- [linkerd-control-plane-app](https://github.com/giantswarm/linkerd-control-plane-app)
+- [linkerd-multicluster-app (optional)](https://github.com/giantswarm/linkerd-multicluster-app)
+- [linkerd-multicluster-link-app (optional)](https://github.com/giantswarm/linkerd-multicluster-link-app)
+- [linkerd-viz-app](https://github.com/giantswarm/linkerd-viz-app)
 
 ## Installing
 
