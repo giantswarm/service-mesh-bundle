@@ -1,17 +1,16 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/{APP-NAME}.svg?style=shield)](https://circleci.com/gh/giantswarm/{APP-NAME})
+[![CircleCI](https://circleci.com/gh/giantswarm/linkerd-bundle.svg?style=shield)](https://circleci.com/gh/giantswarm/linkerd-bundle)
 
-[Read me after cloning this template (GS staff only)](https://intranet.giantswarm.io/docs/dev-and-releng/app-developer-processes/adding_app_to_appcatalog/)
+# linkerd-bundle chart
 
-# {APP-NAME} chart
-
-Giant Swarm offers a {APP-NAME} App which can be installed in workload clusters.
-Here we define the {APP-NAME} chart with its templates and default configuration.
+The linkerd bundle provides the necessary components to enable service mesh capabilities in a workload cluster.
 
 **What is this app?**
 
-**Why did we add it?**
-
-**Who can use it?**
+- linkerd2-cni-app
+- linkerd-control-plane-app
+- linkerd-multicluster-app (optional)
+- linkerd-multicluster-link-app (optional)
+- linkerd-viz-app
 
 ## Installing
 
@@ -58,13 +57,3 @@ This app has been tested to work with the following workload cluster release ver
 
 - _add release version_
 
-## Limitations
-
-Some apps have restrictions on how they can be deployed.
-Not following these limitations will most likely result in a broken deployment.
-
-- _add limitation_
-
-## Credit
-
-- {APP HELM REPOSITORY}
