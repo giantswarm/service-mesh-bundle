@@ -1,12 +1,25 @@
-name: {APP-NAME}
-serviceType: managed
+clusterID: "test"
+organization: ""
 
-project:
-  branch: "[[ .Branch ]]"
-  commit: "[[ .SHA ]]"
-
-image:
-  registry: quay.io
-  name: giantswarm/{APP-NAME}
-  tag: v0.0.1
-  pullPolicy: IfNotPresent
+apps:
+  linkerd2-cni:
+    appName: linkerd2-cni
+    chartName: linkerd2-cni
+    catalog: giantswarm
+    enabled: true
+    namespace: linkerd-cni
+    namespaceConfig:
+      annotations:
+        linkerd.io/inject: disabled
+      labels:
+        linkerd.io/cni-resource: "true"
+        config.linkerd.io/admission-webhooks: disabled
+    # used by renovate
+    # repo: giantswarm/linkerd2-cni-app
+    version: 0.8.0
+    # User values can be provided via a ConfigMap or Secret for each individual app
+    userConfig: {}
+    # a list of extraConfigs for the App,
+    # It can be secret or configmap
+    # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
+    extraConfigs: []
