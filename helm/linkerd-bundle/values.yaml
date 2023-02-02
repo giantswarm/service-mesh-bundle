@@ -9,11 +9,10 @@ apps:
     enabled: true
     namespace: linkerd-cni
     namespaceConfig:
-      annotations:
-        linkerd.io/inject: disabled
       labels:
         linkerd.io/cni-resource: "true"
         config.linkerd.io/admission-webhooks: disabled
+        pod-security.kubernetes.io/enforce: privileged
     # used by renovate
     # repo: giantswarm/linkerd2-cni-app
     version: 0.8.0
