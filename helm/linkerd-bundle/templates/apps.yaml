@@ -31,7 +31,7 @@ spec:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   version: {{ .version }}
-  {{- if or .extraConfigs (hasSuffix "prometheus-agent" $appName) }}
+  {{- if .extraConfigs }}
   extraConfigs:
   {{- range $extraConfig := .extraConfigs }}
   - kind: {{ $extraConfig.kind }}
