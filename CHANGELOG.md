@@ -8,5 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - Added initial repo configuration.
+- Added apps templates and helpers ([#3](https://github.com/giantswarm/linkerd-bundle/pull/3)).
 
-[Unreleased]: https://github.com/giantswarm/{APP-NAME}/tree/main
+[Unreleased]: https://github.com/giantswarm/linkerd-bundle/tree/main
