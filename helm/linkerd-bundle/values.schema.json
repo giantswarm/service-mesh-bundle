@@ -27,28 +27,7 @@
                             "type": "string"
                         },
                         "namespaceConfig": {
-                            "type": "object",
-                            "properties": {
-                                "annotations": {
-                                    "type": "object",
-                                    "properties": {
-                                        "linkerd.io/inject": {
-                                            "type": "string"
-                                        }
-                                    }
-                                },
-                                "labels": {
-                                    "type": "object",
-                                    "properties": {
-                                        "config.linkerd.io/admission-webhooks": {
-                                            "type": "string"
-                                        },
-                                        "linkerd.io/cni-resource": {
-                                            "type": "string"
-                                        }
-                                    }
-                                }
-                            }
+                            "type": "object"
                         },
                         "userConfig": {
                             "type": "object"
