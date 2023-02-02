@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "apps": {
+            "type": "object",
+            "properties": {
+                "linkerd2-cni": {
+                    "type": "object",
+                    "properties": {
+                        "appName": {
+                            "type": "string"
+                        },
+                        "catalog": {
+                            "type": "string"
+                        },
+                        "chartName": {
+                            "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
+                        },
+                        "extraConfigs": {
+                            "type": "array"
+                        },
+                        "namespace": {
+                            "type": "string"
+                        },
+                        "namespaceConfig": {
+                            "type": "object",
+                            "properties": {
+                                "annotations": {
+                                    "type": "object",
+                                    "properties": {
+                                        "linkerd.io/inject": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "labels": {
+                                    "type": "object",
+                                    "properties": {
+                                        "config.linkerd.io/admission-webhooks": {
+                                            "type": "string"
+                                        },
+                                        "linkerd.io/cni-resource": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "userConfig": {
+                            "type": "object"
+                        },
+                        "version": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "clusterID": {
+            "type": "string"
+        },
+        "organization": {
+            "type": "string"
+        }
+    }
+}
