@@ -11,7 +11,7 @@ metadata:
   namespace: {{ $.Release.Namespace }}
 spec:
   catalog: {{ .catalog }}
-  {{- if ne $.Release.Namespace "giantswarm" }} ## Vintage MCs do not have this CM
+  {{- if $.Values.clusterValues }}
   config:
     configMap:
       name: {{ $.Values.clusterID }}-cluster-values
