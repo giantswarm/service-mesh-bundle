@@ -46,10 +46,7 @@ apiVersion: v1
 data:
   values: |
     clusterID: abc12
-    organization: mati
-    apps:
-      linkerd2-cni:
-        enabled: true
+    organization: someOrg
 kind: ConfigMap
 metadata:
   name: linkerd-bundle-user-values
