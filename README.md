@@ -77,7 +77,6 @@ spec:
   version: 0.0.0
 ```
 
-
 See our [full reference on how to configure apps](https://docs.giantswarm.io/app-platform/app-configuration/) for more details.
 
 ## Compatibility
