@@ -1,5 +1,6 @@
 clusterID: "test"
 organization: ""
+clusterValues: false
 
 apps:
   linkerd2-cni:
