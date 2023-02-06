@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added App CR example in README ([#5](https://github.com/giantswarm/linkerd-bundle/pull/5))
 - Added linkerd2-cni app with minimal configuration ([#4](https://github.com/giantswarm/linkerd-bundle/pull/4)).
 - Added apps templates and helpers ([#3](https://github.com/giantswarm/linkerd-bundle/pull/3)).
 - Added initial repo configuration.
