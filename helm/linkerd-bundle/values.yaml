@@ -23,3 +23,26 @@ apps:
     # It can be secret or configmap
     # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
     extraConfigs: []
+  linkerd-control-plane:
+    appName: linkerd-control-plane
+    chartName: linkerd-control-plane
+    catalog: giantswarm
+    enabled: true
+    namespace: linkerd
+    namespaceConfig:
+      annotations:
+        linkerd.io/inject: disabled
+      labels:
+        linkerd.io/is-control-plane: "true"
+        config.linkerd.io/admission-webhooks: disabled
+        linkerd.io/control-plane-ns: linkerd
+        pod-security.kubernetes.io/enforce: restricted
+    # used by renovate
+    # repo: giantswarm/linkerd-control-plane-app
+    version: 0.9.0
+    # User values can be provided via a ConfigMap or Secret for each individual app
+    userConfig: {}
+    # a list of extraConfigs for the App,
+    # It can be secret or configmap
+    # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
+    extraConfigs: []
