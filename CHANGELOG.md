@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added linkerd-multicluster and linkerd-multicluster-link apps ([#10](https://github.com/giantswarm/linkerd-bundle/pull/10)).
+- Added linkerd-viz app ([#8](https://github.com/giantswarm/linkerd-bundle/pull/8)).
 - Added linkerd-control-plane app ([#6](https://github.com/giantswarm/linkerd-bundle/pull/6)).
 - Added App CR example in README ([#5](https://github.com/giantswarm/linkerd-bundle/pull/5))
 - Added linkerd2-cni app with minimal configuration ([#4](https://github.com/giantswarm/linkerd-bundle/pull/4)).
