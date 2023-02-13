@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-<<<<<<< HEAD
 - Added linkerd-multicluster and linkerd-multicluster-link apps ([#10](https://github.com/giantswarm/linkerd-bundle/pull/10)).
 - Added linkerd-viz app ([#8](https://github.com/giantswarm/linkerd-bundle/pull/8)).
 - Added linkerd-control-plane app ([#6](https://github.com/giantswarm/linkerd-bundle/pull/6)).
