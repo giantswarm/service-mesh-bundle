@@ -46,3 +46,31 @@ apps:
     # It can be secret or configmap
     # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
     extraConfigs: []
+  linkerd-multicluster:
+    appName: linkerd-multicluster
+    chartName: linkerd-multicluster
+    catalog: giantswarm
+    enabled: false
+    namespace: linkerd-multicluster
+    namespaceConfig:
+      labels:
+        linkerd.io/extension: multicluster
+    # used by renovate
+    # repo: giantswarm/linkerd-multicluster-app
+    version: 0.9.0
+    userConfig: {}
+    extraConfigs: []
+  linkerd-multicluster-link:
+    appName: linkerd-multicluster-link
+    chartName: linkerd-multicluster-link
+    catalog: giantswarm
+    enabled: false
+    namespace: linkerd-multicluster
+    namespaceConfig:
+      labels:
+        linkerd.io/extension: multicluster
+    # used by renovate
+    # repo: giantswarm/linkerd-multicluster-link-app
+    version: 0.9.0
+    userConfig: {}
+    extraConfigs: []
