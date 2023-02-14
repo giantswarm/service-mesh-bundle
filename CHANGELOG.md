@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2023-02-14
+
 ### Added
 
 - Added examples ([#11](https://github.com/giantswarm/linkerd-bundle/pull/11)).
@@ -18,4 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added apps templates and helpers ([#3](https://github.com/giantswarm/linkerd-bundle/pull/3)).
 - Added initial repo configuration.
 
-[Unreleased]: https://github.com/giantswarm/linkerd-bundle/tree/main
+[Unreleased]: https://github.com/giantswarm/linkerd-bundle/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/giantswarm/linkerd-bundle/releases/tag/v0.1.0
