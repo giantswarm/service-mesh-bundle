@@ -13,7 +13,6 @@ apps:
       labels:
         linkerd.io/cni-resource: "true"
         config.linkerd.io/admission-webhooks: disabled
-        pod-security.kubernetes.io/enforce: privileged
     # used by renovate
     # repo: giantswarm/linkerd2-cni-app
     version: 0.8.0
@@ -36,7 +35,6 @@ apps:
         linkerd.io/is-control-plane: "true"
         config.linkerd.io/admission-webhooks: disabled
         linkerd.io/control-plane-ns: linkerd
-        pod-security.kubernetes.io/enforce: restricted
     # used by renovate
     # repo: giantswarm/linkerd-control-plane-app
     version: 0.9.0
