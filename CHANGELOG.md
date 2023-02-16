@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.1] - 2023-02-16
 
+### Fixed
+
+- Remove pod-security annotation until work on PSS is done ([#13](https://github.com/giantswarm/linkerd-bundle/pull/13)).
+
 ## [0.1.0] - 2023-02-14
 
 ### Added
