@@ -60,6 +60,8 @@ apps:
     extraConfigs: []
   linkerd-multicluster:
     appName: linkerd-multicluster
+    annotations:
+      app-operator.giantswarm.io/depends-on: linkerd-control-plane
     chartName: linkerd-multicluster
     catalog: giantswarm
     enabled: false
@@ -74,6 +76,8 @@ apps:
     extraConfigs: []
   linkerd-multicluster-link:
     appName: linkerd-multicluster-link
+    annotations:
+      app-operator.giantswarm.io/depends-on: linkerd-multicluster
     chartName: linkerd-multicluster-link
     catalog: giantswarm
     enabled: false
