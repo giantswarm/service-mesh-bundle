@@ -7,6 +7,10 @@ kind: App
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
+  {{- with .annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   name: {{ $appName }}
   namespace: {{ $.Release.Namespace }}
 spec:

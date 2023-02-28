@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added dependencies between apps ([#16](https://github.com/giantswarm/linkerd-bundle/pull/16)).
+  - linkerd-control-plane and linkerd2-cni
+  - linkerd-viz and linkerd-control-plane
+  - linkerd-multicluster and linkerd-control-plane
+
 ## [0.1.1] - 2023-02-16
 
 ### Fixed
