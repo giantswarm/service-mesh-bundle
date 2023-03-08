@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update dependency giantswarm/linkerd-control-plane-app to v0.10.0
+- Update dependency giantswarm/linkerd-multicluster-app to v0.9.1
+- Update dependency giantswarm/linkerd2-cni-app to v0.9.0
+
 ## [0.1.2] - 2023-02-28
 
 ### Added
