@@ -39,7 +39,7 @@ apps:
         linkerd.io/control-plane-ns: linkerd
     # used by renovate
     # repo: giantswarm/linkerd-control-plane-app
-    version: 0.9.0
+    version: 0.10.0
     userConfig: {}
     extraConfigs: []
   linkerd-viz:
