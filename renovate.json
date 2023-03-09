@@ -19,7 +19,9 @@
       "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
       "matchStrings": ["repo: (?<depName>.*)\n(\\s)*version: (?<currentValue>.*?)\n"],
       "datasourceTemplate": "github-releases",
-      "extractVersionTemplate": "^v(?<version>.*)$"
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "groupName": "apps",
+      "automerge": true
     }
   ],
   "schedule": [ "after 6am on thursday" ]
