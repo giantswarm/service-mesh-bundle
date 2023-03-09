@@ -39,7 +39,7 @@ apps:
         linkerd.io/control-plane-ns: linkerd
     # used by renovate
     # repo: giantswarm/linkerd-control-plane-app
-    version: 0.10.0
+    version: 0.11.0
     userConfig: {}
     extraConfigs: []
   linkerd-viz:
@@ -55,7 +55,7 @@ apps:
         linkerd.io/extension: viz
     # used by renovate
     # repo: giantswarm/linkerd-viz-app
-    version: 0.8.0
+    version: 0.9.0
     userConfig: {}
     extraConfigs: []
   linkerd-multicluster:
@@ -71,7 +71,7 @@ apps:
         linkerd.io/extension: multicluster
     # used by renovate
     # repo: giantswarm/linkerd-multicluster-app
-    version: 0.9.1
+    version: 0.10.0
     userConfig: {}
     extraConfigs: []
   linkerd-multicluster-link:
