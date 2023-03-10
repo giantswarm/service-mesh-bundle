@@ -7,7 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Promote bundle to stable catalog.
+
 ## [0.3.0] - 2023-03-09
+
+### Changed
+
+- Update dependency giantswarm/linkerd-control-plane-app to v0.11.0
+- Update dependency giantswarm/linkerd-viz-app to v0.9.0
+- Update dependency giantswarm/linkerd-multicluster-app to v0.10.0
+- Update dependency giantswarm/linkerd-multicluster-link-app to v0.10.0
+- Update dependency giantswarm/linkerd2-cni-app to v0.10.0
 
 ## [0.2.0] - 2023-03-08
 
