@@ -13,6 +13,6 @@ step certificate create identity.linkerd.cluster.local issuer.crt issuer.key --p
 
 ## Examples
 
-These examples should be applied to your management cluster.
+These examples should be applied to your management cluster. Adapt the files according to your setup. When installing on Cluster API based workload clusters, deploy into your organization namespace (`org-`). Otherwise create the resources inside of the cluster namespace (Named after the cluster id).
 
 - [Basic setup on Organization namespaces](https://github.com/giantswarm/linkerd-bundle/blob/main/examples/basic-org-ns.yaml)
