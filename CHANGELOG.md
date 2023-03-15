@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Promote bundle to stable catalog.
+- Add kubeconfig secret to AppCR template.
 
 ## [0.3.0] - 2023-03-09
 
