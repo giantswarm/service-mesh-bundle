@@ -10,16 +10,16 @@ data:
         enabled: true
         userConfig:
           secret:
-            values: | 
+            values: |
               identity:
                 issuer:
                   tls:
                     crtPEM: |
-                      ...
+                      <contents of the issuer.crt file>
                     keyPEM: |
-                      ...
+                      <contents of the issuer.key file>
               identityTrustAnchorsPEM: |
-                ...
+                <contents of the ca.crt file>
 kind: ConfigMap
 metadata:
   name: abc12-linkerd-bundle-user-values
@@ -37,7 +37,7 @@ metadata:
   name: abc12-linkerd-bundle
   namespace: org-test
 spec:
-  catalog: giantswarm-playground-test
+  catalog: giantswarm
   kubeConfig:
     inCluster: true
   name: linkerd-bundle
@@ -46,4 +46,4 @@ spec:
     configMap:
       name: abc12-linkerd-bundle-user-values
       namespace: org-test
-  version: 0.1.0
+  version: 0.3.0
