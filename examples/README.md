@@ -2,7 +2,7 @@
 
 The following examples can be used to get started quickly. Please review the files thoroughly and adapt things like configuration and cluster names.
 
-A successful install will require you to generate a trust anchor and issuer certificate. The following steps loosely follow [the official instructions](https://linkerd.io/2.12/tasks/generate-certificates/).
+A successful install will require you to generate a trust anchor and issuer certificate. The following steps loosely follow [the official instructions](https://linkerd.io/2.13/tasks/generate-certificates/).
 
 Obtain the `step` cli (we're using `step_linux_0.19.0_amd64.tar.gz` from [here](https://github.com/smallstep/cli/releases/tag/v0.19.0)) and execute the following commands. Take note of the `--not-after` flag. (8760h = 1 year)
 
