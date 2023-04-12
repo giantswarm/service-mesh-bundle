@@ -46,4 +46,4 @@ spec:
     configMap:
       name: abc12-linkerd-bundle-user-values
       namespace: org-test
-  version: 0.3.0
+  version: 0.3.1
