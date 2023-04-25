@@ -1,13 +1,14 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: abc12-linkerd-bundle-user-values
+  namespace: org-test
 data:
   values: |
     clusterID: abc12
     organization: test
     apps:
-      linkerd2-cni:
-        enabled: true
       linkerd-control-plane:
-        enabled: true
         userConfig:
           secret:
             values: |
@@ -20,30 +21,24 @@ data:
                       <contents of the issuer.key file>
               identityTrustAnchorsPEM: |
                 <contents of the ca.crt file>
-kind: ConfigMap
-metadata:
-  name: abc12-linkerd-bundle-user-values
-  namespace: org-test
-
 ---
-
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
-  labels:
-    app.kubernetes.io/name: linkerd-bundle
-    app-operator.giantswarm.io/version: 0.0.0
-    giantswarm.io/cluster: abc12
   name: abc12-linkerd-bundle
   namespace: org-test
+  labels:
+    app.kubernetes.io/name: linkerd-bundle
+    giantswarm.io/cluster: abc12
+    app-operator.giantswarm.io/version: 0.0.0
 spec:
   catalog: giantswarm
-  kubeConfig:
-    inCluster: true
   name: linkerd-bundle
-  namespace: org-test
+  version: 0.3.1
   userConfig:
     configMap:
       name: abc12-linkerd-bundle-user-values
       namespace: org-test
-  version: 0.3.1
+  kubeConfig:
+    inCluster: true
+  namespace: org-test

@@ -4,15 +4,15 @@ Not all PRs will require all tests to be carried out. Delete where appropriate.
 
 This PR:
 
-- adds/changes/removes etc
+- Adds / changes / removes etc.
 
 ### Testing
 
-- [ ] fresh install works
+- [ ] Fresh install works
   - [ ] AWS
   - [ ] Azure
   - [ ] KVM
-- [ ] upgrade from previous version works
+- [ ] Upgrade from previous version works
   - [ ] AWS
   - [ ] Azure
   - [ ] KVM

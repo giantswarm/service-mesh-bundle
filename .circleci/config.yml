@@ -3,16 +3,15 @@ orbs:
   architect: giantswarm/architect@4.28.1
 
 workflows:
-  package-and-push-chart-on-tag:
+  build-and-push:
     jobs:
       - architect/push-to-app-catalog:
-          context: "architect"
-          executor: "app-build-suite" 
-          name: "package and push linkerd-bundle chart"
-          app_catalog: "giantswarm-catalog"
-          app_catalog_test: "giantswarm-test-catalog"
-          chart: "linkerd-bundle"
-          # Trigger job on git tag.
+          name: push-to-giantswarm-app-catalog
+          context: architect
+          executor: app-build-suite
+          app_catalog: giantswarm-catalog
+          app_catalog_test: giantswarm-test-catalog
+          chart: linkerd-bundle
           filters:
             tags:
               only: /^v.*/
