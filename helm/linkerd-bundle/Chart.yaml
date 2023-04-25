@@ -9,8 +9,9 @@ description: |
 home: https://github.com/giantswarm/linkerd-bundle
 # If you have an icon/logo, you should add it to https://github.com/giantswarm/web-assets
 # and set the final URL as a value here and uncomment.
-icon: https://s.giantswarm.io/app-icons/linkerd2/1/light.svg
+icon: https://s.giantswarm.io/app-icons/linkerd2/2/icon_dark.svg
 version: 0.3.1
 annotations:
   application.giantswarm.io/team: cabbage
   application.giantswarm.io/app-type: bundle
+  ui.giantswarm.io/logo: https://s.giantswarm.io/app-icons/linkerd2/2/logo_dark.svg
