@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Replace icon and add logo.
+- Update dependency giantswarm/linkerd-control-plane-app to v1.0.0
+- Update dependency giantswarm/linkerd2-cni-app to v1.0.0
+- Update dependency giantswarm/linkerd-viz-app to v1.0.0
+- Update dependency giantswarm/linkerd-multicluster-app to v0.11.0
+- Update dependency giantswarm/linkerd-multicluster-link-app to v0.11.0
 
 ## [0.3.1] - 2023-04-12
 
