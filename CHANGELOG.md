@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2023-07-05
+
 ### Changed
 
 - Replace icon and add logo.
@@ -63,7 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added apps templates and helpers ([#3](https://github.com/giantswarm/linkerd-bundle/pull/3)).
 - Added initial repo configuration.
 
-[Unreleased]: https://github.com/giantswarm/linkerd-bundle/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/giantswarm/linkerd-bundle/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/giantswarm/linkerd-bundle/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/giantswarm/linkerd-bundle/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/giantswarm/linkerd-bundle/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/giantswarm/linkerd-bundle/compare/v0.1.2...v0.2.0
