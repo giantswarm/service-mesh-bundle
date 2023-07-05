@@ -71,7 +71,7 @@ apps:
         linkerd.io/extension: multicluster
     # used by renovate
     # repo: giantswarm/linkerd-multicluster-app
-    version: 0.10.0
+    version: 0.11.0
     userConfig: {}
     extraConfigs: []
   linkerd-multicluster-link:
