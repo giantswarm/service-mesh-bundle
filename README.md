@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/linkerd-bundle.svg?style=shield)](https://circleci.com/gh/giantswarm/linkerd-bundle)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/linkerd-bundle/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/linkerd-bundle/tree/main)
 
 # linkerd-bundle chart
 
