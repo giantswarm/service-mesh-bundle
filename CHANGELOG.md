@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Rename app as service-mesh-bundle.
+- Update dependency giantswarm/linkerd2-cni-app to v1.1.0 (#65)
+- Update dependency giantswarm/linkerd-control-plane-app to v1.1.0 (#63)
+- Update dependency giantswarm/linkerd-viz-app to v1.3.0 (#64)
+- Update dependency giantswarm/linkerd-viz-app to v1.2.0 (#62)
 
 ## [0.4.0] - 2023-07-05
 
