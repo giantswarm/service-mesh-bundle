@@ -1,6 +1,6 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/linkerd-bundle/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/linkerd-bundle/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/service-mesh-bundle/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/service-mesh-bundle/tree/main)
 
-# linkerd-bundle chart
+# service-mesh-bundle chart
 
 The linkerd bundle provides the necessary components to enable service mesh capabilities in a workload cluster.
 
@@ -18,11 +18,11 @@ There are several ways to install this app onto a workload cluster.
 
 - [Using GitOps to instantiate the App](https://docs.giantswarm.io/advanced/gitops/#installing-managed-apps)
 - [Using our web interface](https://docs.giantswarm.io/ui-api/web/app-platform/#installing-an-app).
-- By creating an [App resource](https://docs.giantswarm.io/use-the-api/management-api/crd/apps.application.giantswarm.io/) in the management cluster as explained in [Getting started with App Platform](https://docs.giantswarm.io/app-platform/getting-started/) and the [App Bundle reference](https://docs.giantswarm.io/getting-started/app-platform/app-bundle/). Also check out the [examples](https://github.com/giantswarm/linkerd-bundle/tree/main/examples).
+- By creating an [App resource](https://docs.giantswarm.io/use-the-api/management-api/crd/apps.application.giantswarm.io/) in the management cluster as explained in [Getting started with App Platform](https://docs.giantswarm.io/app-platform/getting-started/) and the [App Bundle reference](https://docs.giantswarm.io/getting-started/app-platform/app-bundle/). Also check out the [examples](https://github.com/giantswarm/service-mesh-bundle/tree/main/examples).
 
 ## Configuring
 
-Check the [examples](https://github.com/giantswarm/linkerd-bundle/tree/main/examples) for different configuration scenarios.
+Check the [examples](https://github.com/giantswarm/service-mesh-bundle/tree/main/examples) for different configuration scenarios.
 
 See our [full reference on how to configure apps](https://docs.giantswarm.io/app-platform/app-configuration/) for more details.
 

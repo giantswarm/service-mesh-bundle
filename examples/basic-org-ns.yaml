@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: abc12-linkerd-bundle-user-values
+  name: abc12-service-mesh-bundle-user-values
   namespace: org-test
 data:
   values: |
@@ -25,19 +25,19 @@ data:
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
-  name: abc12-linkerd-bundle
+  name: abc12-service-mesh-bundle
   namespace: org-test
   labels:
-    app.kubernetes.io/name: linkerd-bundle
+    app.kubernetes.io/name: service-mesh-bundle
     giantswarm.io/cluster: abc12
     app-operator.giantswarm.io/version: 0.0.0
 spec:
   catalog: giantswarm
-  name: linkerd-bundle
+  name: service-mesh-bundle
   version: 0.3.1
   userConfig:
     configMap:
-      name: abc12-linkerd-bundle-user-values
+      name: abc12-service-mesh-bundle-user-values
       namespace: org-test
   kubeConfig:
     inCluster: true
