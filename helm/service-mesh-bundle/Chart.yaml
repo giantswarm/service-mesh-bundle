@@ -3,7 +3,7 @@ appVersion: stable-2.12.4
 name: service-mesh-bundle
 description: |
   The Service Mesh Bundle provides all the necessary components to install
-  Linkerd on your workload cluster, adding observability, reliability, 
+  Linkerd on your workload cluster, adding observability, reliability,
   and security for your microservices — with no code change required.
 home: https://github.com/giantswarm/service-mesh-bundle
 icon: https://s.giantswarm.io/app-icons/linkerd2/2/icon_dark.svg
