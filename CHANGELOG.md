@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2023-09-13
+
 ### Changed
 
 - Rename app as service-mesh-bundle.
+- Update dependency giantswarm/linkerd2-cni-app to v1.1.0 (#65)
+- Update dependency giantswarm/linkerd-control-plane-app to v1.1.0 (#63)
+- Update dependency giantswarm/linkerd-viz-app to v1.3.0 (#64)
+- Update dependency giantswarm/linkerd-viz-app to v1.2.0 (#62)
 
 ## [0.4.0] - 2023-07-05
 
@@ -74,7 +80,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added apps templates and helpers ([#3](https://github.com/giantswarm/service-mesh-bundle/pull/3)).
 - Added initial repo configuration.
 
-[Unreleased]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/giantswarm/service-mesh-bundle/compare/v0.2.0...v0.3.0
