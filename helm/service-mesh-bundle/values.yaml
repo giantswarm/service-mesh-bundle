@@ -90,3 +90,20 @@ apps:
     version: 0.11.0
     userConfig: {}
     extraConfigs: []
+  linkerd-certs:
+    appName: linkerd-certs
+    chartName: linkerd-certs
+    catalog: giantswarm-playground-test
+    enabled: true
+    namespace: linkerd
+    namespaceConfig:
+      labels: {}
+    # used by renovate
+    # repo: giantswarm/linkerd-certs
+    version: 0.0.0-02f30e83251aee165e2c2ecfaea6ddcebdaa7c61
+    # User values can be provided via a ConfigMap or Secret for each individual app
+    userConfig: { }
+    # a list of extraConfigs for the App,
+    # It can be secret or configmap
+    # https://github.com/giantswarm/rfc/tree/main/multi-layer-app-config#example
+    extraConfigs: [ ]
