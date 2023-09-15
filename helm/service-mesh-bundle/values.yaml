@@ -94,7 +94,7 @@ apps:
     appName: linkerd-certs
     chartName: linkerd-certs
     catalog: giantswarm-playground-test
-    enabled: true
+    enabled: false
     namespace: linkerd
     namespaceConfig:
       labels: {}
