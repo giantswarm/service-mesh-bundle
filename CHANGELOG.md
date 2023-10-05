@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.0] - 2023-10-05
 
+- Update dependency giantswarm/linkerd-viz-app to v1.3.1 (#72)
+
 ## [0.5.0] - 2023-09-13
 
 ### Changed
