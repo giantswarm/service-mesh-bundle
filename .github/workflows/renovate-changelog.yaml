@@ -1,0 +1,60 @@
+#
+name: Renovate / Add CHANGELOG entry.
+on:
+  push:
+    branches:
+      - 'renovate/*'
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  debug_info:
+    name: Debug info
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Print github context JSON
+        run: |
+          cat <<EOF
+          ${{ toJson(github) }}
+          EOF
+  add_changelog:
+    name: Add CHANGELOG entry
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.events.ref }}
+      - name: Set up git identity
+        run: |
+          git config --local user.email "dev@giantswarm.io"
+          git config --local user.name "taylorbot"
+      - name: Add CHANGELOG entry
+        run: |
+          awk -i inplace -v message="${{ github.event.pull_request.title }}" '
+          function print_log() { return "- " message "\n" }
+          function print_changed() { return "### Changed\n\n" print_log() "\n" }
+
+          # Detect Unreleased header.
+          (/^## \[Unreleased\]/) { s=1 }
+
+          # If we are inside Unreleased, detect Change header.
+          (s==1 && /### Changed/) { s=2 }
+
+          # If inside Change header, print message as first item and exit.
+          (s==2 && /^- .*/) { s=0; $0 = print_log() $0 }
+
+          # If no Change header was found, print a new one plus message.
+          (s==1 && /^## \[.*\] .*/) { s=0; $0 = print_changed() $0 }
+
+          # Always print the line
+          {print}
+          ' CHANGELOG.md
+      - name: Commit changelog
+        run: |
+          git add CHANGELOG.md
+          git commit -m "Update changelog"
+      - name: Push changes
+        env:
+          remote_repo: "https://${{ github.actor }}:${{ secrets.TAYLORBOT_GITHUB_ACTION }}@github.com/${{ github.repository }}.git"
+        run: |
+          git push "${remote_repo}" HEAD:${{ github.events.ref }}
