@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.0] - 2023-11-15
 
+### Changed
+
+- Update Linkerd to v2.14.3:
+  - Update dependency giantswarm/linkerd-viz-app to v1.4.0 (#86)
+  - Update dependency giantswarm/linkerd-control-plane-app to v1.3.0 (#85)
+  - Update dependency giantswarm/linkerd2-cni-app to v1.4.0 (#84)
+
 ## [0.6.0] - 2023-10-11
 
 ### Changed
