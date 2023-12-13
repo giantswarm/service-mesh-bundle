@@ -15,7 +15,7 @@ apps:
         config.linkerd.io/admission-webhooks: disabled
     # used by renovate
     # repo: giantswarm/linkerd2-cni-app
-    version: 1.4.0
+    version: 1.4.1
     # User values can be provided via a ConfigMap or Secret for each individual app
     userConfig: {}
     # a list of extraConfigs for the App,
