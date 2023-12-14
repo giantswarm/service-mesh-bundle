@@ -15,7 +15,7 @@ apps:
         config.linkerd.io/admission-webhooks: disabled
     # used by renovate
     # repo: giantswarm/linkerd2-cni-app
-    version: 1.4.0
+    version: 1.4.1
     # User values can be provided via a ConfigMap or Secret for each individual app
     userConfig: {}
     # a list of extraConfigs for the App,
@@ -39,7 +39,7 @@ apps:
         linkerd.io/control-plane-ns: linkerd
     # used by renovate
     # repo: giantswarm/linkerd-control-plane-app
-    version: 1.3.0
+    version: 1.3.1
     userConfig: {}
     extraConfigs: []
   linkerd-viz:
@@ -55,7 +55,7 @@ apps:
         linkerd.io/extension: viz
     # used by renovate
     # repo: giantswarm/linkerd-viz-app
-    version: 1.4.0
+    version: 1.4.1
     userConfig: {}
     extraConfigs: []
   linkerd-multicluster:
@@ -71,7 +71,7 @@ apps:
         linkerd.io/extension: multicluster
     # used by renovate
     # repo: giantswarm/linkerd-multicluster-app
-    version: 0.11.0
+    version: 0.11.1
     userConfig: {}
     extraConfigs: []
   linkerd-multicluster-link:
@@ -87,6 +87,6 @@ apps:
         linkerd.io/extension: multicluster
     # used by renovate
     # repo: giantswarm/linkerd-multicluster-link-app
-    version: 0.11.0
+    version: 0.11.1
     userConfig: {}
     extraConfigs: []

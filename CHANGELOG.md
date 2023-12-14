@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Configure `gsoci.azurecr.io` as the default container image registry:
+  - Update dependency giantswarm/linkerd-viz-app to v1.4.1 (#90)
+  - Update dependency giantswarm/linkerd-control-plane-app to v1.3.1 (#90)
+  - Update dependency giantswarm/linkerd2-cni-app to v1.4.1 (#90)
+  - Update dependency giantswarm/linkerd-multicluster-app to v0.11.1 (#90)
+  - Update dependency giantswarm/linkerd-multicluster-link-app to v0.11.1 (#90)
+
 ## [0.7.0] - 2023-11-15
 
 ### Changed
