@@ -1,13 +1,17 @@
-{{- range $key, $value := .Values.apps }}
+{{- range .Values.apps }}
 {{- $appName := include "app.name" (dict "app" .appName "cluster" $.Values.clusterID "ns" $.Release.Namespace) }}
 {{- if .enabled }}
+{{- $annotations := .annotations | default dict }}
+{{- if .dependsOn -}}
+{{- $annotations := merge $annotations (dict "app-operator.giantswarm.io/depends-on" (include "app.name" (dict "app" .dependsOn "cluster" $.Values.clusterID "ns" $.Release.Namespace))) }}
+{{- end }}
 ---
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-  {{- with .annotations }}
+  {{- with $annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
@@ -24,7 +28,7 @@ spec:
   install:
     skipCRDs: {{.skipCRDs | default false }}
     timeout: 10m
-  upgrade: 
+  upgrade:
     timeout: 10m
   kubeConfig:
     inCluster: false
