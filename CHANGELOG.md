@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Fix App dependency for CAPI.
+- Update helm values validation schema.
+
 ## [0.7.1] - 2023-12-15
 
 ### Changed

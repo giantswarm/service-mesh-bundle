@@ -24,8 +24,7 @@ apps:
     extraConfigs: []
   linkerd-control-plane:
     appName: linkerd-control-plane
-    annotations:
-      app-operator.giantswarm.io/depends-on: linkerd2-cni
+    annotations: {}
     chartName: linkerd-control-plane
     catalog: giantswarm
     enabled: true
@@ -42,10 +41,10 @@ apps:
     version: 1.3.1
     userConfig: {}
     extraConfigs: []
+    dependsOn: linkerd2-cni
   linkerd-viz:
     appName: linkerd-viz
-    annotations:
-      app-operator.giantswarm.io/depends-on: linkerd-control-plane
+    annotations: {}
     chartName: linkerd-viz
     catalog: giantswarm
     enabled: true
@@ -58,6 +57,7 @@ apps:
     version: 1.5.0
     userConfig: {}
     extraConfigs: []
+    dependsOn: linkerd-control-plane
   linkerd-multicluster:
     appName: linkerd-multicluster
     annotations:
@@ -74,10 +74,10 @@ apps:
     version: 0.11.1
     userConfig: {}
     extraConfigs: []
+    dependsOn: linkerd-control-plane
   linkerd-multicluster-link:
     appName: linkerd-multicluster-link
-    annotations:
-      app-operator.giantswarm.io/depends-on: linkerd-multicluster
+    annotations: {}
     chartName: linkerd-multicluster-link
     catalog: giantswarm
     enabled: false
@@ -90,3 +90,4 @@ apps:
     version: 0.11.1
     userConfig: {}
     extraConfigs: []
+    dependsOn: linkerd-multicluster
