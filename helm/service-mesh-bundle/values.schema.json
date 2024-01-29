@@ -28,16 +28,66 @@
                             "type": "boolean"
                         },
                         "extraConfigs": {
-                            "type": "array"
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "kind": {
+                                        "type": "string",
+                                        "pattern": "^(ConfigMap|Secret)$"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "namespace": {
+                                        "type": "string"
+                                    },
+                                    "priority": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": ["name", "namespace"],
+                                "additionalProperties": false
+                            }
                         },
                         "namespace": {
                             "type": "string"
                         },
                         "namespaceConfig": {
-                            "type": "object"
+                            "type": "object",
+                            "properties": {
+                                "annotations": {
+                                    "type": "object"
+                                },
+                                "labels": {
+                                    "type": "object"
+                                }
+                            },
+                            "additionalProperties": false
                         },
                         "userConfig": {
-                            "type": "object"
+                            "type": "object",
+                            "properties": {
+                                "configMap": {
+                                    "type": "object",
+                                    "properties": {
+                                        "values": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "secret": {
+                                    "type": "object",
+                                    "properties": {
+                                        "values": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
                         },
                         "version": {
                             "type": "string"

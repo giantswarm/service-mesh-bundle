@@ -39,12 +39,17 @@ spec:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   version: {{ .version }}
-  {{- if .extraConfigs }}
+  {{- with .extraConfigs }}
   extraConfigs:
-  {{- range $extraConfig := .extraConfigs }}
-  - kind: {{ $extraConfig.kind }}
-    name: {{ $extraConfig.name }}
-    namespace: {{ $extraConfig.namespace }}
+  {{- range . }}
+  - name: {{ .name }}
+    namespace: {{ .namespace }}
+    {{- with .kind }}
+    kind: {{ . }}
+    {{- end }}
+    {{- with .priority }}
+    priority: {{ . }}
+    {{- end }}
   {{- end }}
   {{- end }}
   {{- if .userConfig }}
